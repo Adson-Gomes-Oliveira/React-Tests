@@ -14,8 +14,8 @@ class PokemonDetails extends React.Component {
         <div className="pokemon-habitat">
           { foundAt.map(({ location, map }) => (
             <div key={ location }>
-              <img src={ `${map}` } alt={ `${name} location` } />
-              <p><em>{ location }</em></p>
+              <img data-testid="img-location" src={ `${map}` } alt={ `${name} location` } />
+              <p><em data-testid="pokemon-location">{ location }</em></p>
             </div>
           )) }
         </div>
@@ -27,7 +27,7 @@ class PokemonDetails extends React.Component {
     return (
       <section>
         <h2>{ `Summary` }</h2>
-        <p>{ `${summary}` }</p>
+        <p data-testid="pokemon-summary">{ `${summary}` }</p>
       </section>
     );
   }
