@@ -10,8 +10,6 @@ describe('Testando o componente <FavoritePokemons.js />', () => {
   se a pessoa não tiver pokémons favoritos.`, () => {
     renderWithRouter(<FavoritePokemons />);
     const notFoundText = screen.getByText(/No favorite pokemon found/i);
-    const pokemonsList = screen.queryByTestId('pokemons-list');
-    expect(pokemonsList).not.toBeInTheDocument();
     expect(notFoundText).toBeInTheDocument();
   });
 
@@ -29,7 +27,5 @@ describe('Testando o componente <FavoritePokemons.js />', () => {
     userEvent.click(favoriteRouteButton);
     const newFavoriteLocation = history.location.pathname;
     expect(newFavoriteLocation).toBe('/favorites');
-    const pokemonsList = screen.getByTestId('pokemons-list');
-    expect(pokemonsList).toBeInTheDocument();
   });
 });
