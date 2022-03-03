@@ -5,6 +5,8 @@ import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
 describe('Testando o componente <PokemonDetails.js />', () => {
+  const s1 = 'This intelligent Pokémon roasts hard berries';
+  const s2 = ' with electricity to make them tender enough to eat.';
   const mockPokemonLocation = {
     image1: 'https://cdn2.bulbagarden.net/upload/0/08/Kanto_Route_2_Map.png',
     image2: 'https://cdn2.bulbagarden.net/upload/b/bd/Kanto_Celadon_City_Map.png',
@@ -23,9 +25,8 @@ describe('Testando o componente <PokemonDetails.js />', () => {
     expect(details).not.toBeInTheDocument();
     const summary = screen.getByRole('heading', { name: /summary/i, level: 2 });
     expect(summary).toBeInTheDocument();
-    const text = screen.getByTestId('pokemon-summary');
+    const text = screen.getByText(s1 + s2);
     expect(text).toBeInTheDocument();
-    expect(text.innerHTML.length > 0).toBe(true);
   });
 
   it('Testando as localizações do pokemon', () => {
