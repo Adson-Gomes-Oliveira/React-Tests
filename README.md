@@ -43,15 +43,15 @@ Aplicação de demonstração para desenvolvimento de testes.
 ```
 git clone git@github.com:Adson-Gomes-Oliveira/Saving-Money.git
 ```
->Após o clone ser concluído com sucesso, entre no diretório e utilize o comando `npm install`.
+>Após o clone ser concluído com sucesso, entre no diretório e utilize o comando `npm test`.
 
->Utilize `npm start` para iniciar o projeto localmente.
+>Assim todos os testes serão executados com respectivamente seus resultados.
 
 </details>  
 
 
 ### Informações adicionais
-Versão apenas Desktop. Desenvolvido com Node 16 e muita dedicação.
+Desenvolvido com Node 16 e muita dedicação.
 
 ---
 
