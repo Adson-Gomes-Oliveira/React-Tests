@@ -41,7 +41,7 @@ Aplicação de demonstração para desenvolvimento de testes.
 
 >Primeiro faça o clone deste repositório em sua maquina.
 ```
-git clone git@github.com:Adson-Gomes-Oliveira/Saving-Money.git
+git clone git@github.com:Adson-Gomes-Oliveira/React-Tests.git
 ```
 >Após o clone ser concluído com sucesso, entre no diretório e utilize o comando `npm test`.
 
